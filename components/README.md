@@ -1,6 +1,6 @@
 # Components
 
-This directory contains React components for the Onboarding Intelligence Agent.
+This directory contains React components for the Onboarding Intelligence Agent | Agilow.
 
 ## Directory Structure
 

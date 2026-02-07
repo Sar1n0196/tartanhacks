@@ -491,7 +491,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Style with Tailwind CSS
 
 - [ ] 21. Documentation and polish
-  - [ ] 21.1 Write comprehensive README
+  - [x] 21.1 Write comprehensive README
     - Setup instructions (install dependencies, set OPENAI_API_KEY)
     - How to run in development mode
     - How to use demo mode
