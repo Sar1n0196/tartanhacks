@@ -78,7 +78,7 @@ export default function URLInput({ onSubmit, isLoading = false }: URLInputProps)
               onChange={(e) => setCompanyUrl(e.target.value)}
               onBlur={() => companyUrl && validateUrl(companyUrl)}
               placeholder="https://example.com"
-              className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
+              className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 ${
                 errors.url ? 'border-red-500' : 'border-gray-300'
               }`}
               disabled={isLoading}
@@ -103,7 +103,7 @@ export default function URLInput({ onSubmit, isLoading = false }: URLInputProps)
               value={companyName}
               onChange={(e) => setCompanyName(e.target.value)}
               placeholder="Acme Inc."
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400"
               disabled={isLoading}
             />
             <p className="mt-1 text-xs text-gray-500">

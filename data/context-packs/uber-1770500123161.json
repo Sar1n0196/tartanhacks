@@ -1,0 +1,109 @@
+{
+  "id": "uber-1770500123161",
+  "companyName": "Uber",
+  "companyUrl": "https://uber.com",
+  "version": "v0",
+  "createdAt": "2026-02-07T21:35:23.160Z",
+  "updatedAt": "2026-02-07T21:35:23.160Z",
+  "vision": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": "No explicit vision statement found in the provided URLs."
+    },
+    "citations": []
+  },
+  "mission": {
+    "content": "We reimagine the way the world moves for the better.",
+    "confidence": {
+      "value": 0.9,
+      "reason": "This statement clearly outlines the company's purpose in a broad and aspirational manner."
+    },
+    "citations": [
+      {
+        "type": "url",
+        "reference": "https://uber.com/about",
+        "text": "About usWe reimagine the way the world moves for the better"
+      }
+    ]
+  },
+  "values": [],
+  "icp": {
+    "segments": [],
+    "evolution": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "Not extracted from public pages"
+      },
+      "citations": []
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [
+      {
+        "content": "Making money through deliveries or rides.",
+        "confidence": {
+          "value": 0.8,
+          "reason": "The statement is somewhat general but directly mentions key activities that generate revenue."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://uber.com",
+            "text": "Drive when you want, make what you needMake money on your schedule with deliveries or rides"
+          }
+        ]
+      }
+    ],
+    "pricingModel": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "No specific pricing model details found in the provided URLs."
+      },
+      "citations": []
+    },
+    "keyMetrics": []
+  },
+  "product": {
+    "jobsToBeDone": [
+      {
+        "content": "Helping riders find a way to go from point A to point B, order food quickly and affordably, remove barriers to healthcare, create new freight-booking solutions, and help companies provide a seamless employee travel experience.",
+        "confidence": {
+          "value": 0.8,
+          "reason": "This statement provides a broad overview of the jobs Uber aims to do for its customers, though it lacks specific details on how each job is accomplished."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://uber.com/about",
+            "text": "In addition to helping riders find a way to go from point A to point B, we're helping people order food quickly and affordably, removing barriers to healthcare, creating new freight-booking solutions, and helping companies provide a seamless employee travel experience."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      {
+        "content": "Safety preferences setup in the Uber app.",
+        "confidence": {
+          "value": 0.7,
+          "reason": "Mentions a specific feature related to safety but does not detail the full range of product features."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://uber.com",
+            "text": "Safety, simplifiedTurn on and schedule your safety preferences, all in the Uber app."
+          }
+        ]
+      }
+    ]
+  },
+  "decisionRules": {
+    "priorities": [],
+    "antiPatterns": []
+  },
+  "engineeringKPIs": [],
+  "summary": "Uber - Draft Context Pack v0\n\nMission: We reimagine the way the world moves for the better.\n\nJobs to be Done:\n- Helping riders find a way to go from point A to point B, order food quickly and affordably, remove barriers to healthcare, create new freight-booking solutions, and help companies provide a seamless employee travel experience.\n\nNote: This is a draft pack (v0) based on public information. Complete the interview to create the final pack (v1) with founder insights."
+}
