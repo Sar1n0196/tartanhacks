@@ -181,10 +181,10 @@ export default function BuilderPage() {
 
       const data: InterviewAnswerResponse = await response.json();
       
-      if (data.completed && data.finalPack) {
-        // Interview complete, show final pack
-        setFinalPack(data.finalPack);
-        setCurrentStep('final');
+      if (data.completed) {
+        // Interview complete - need to build final pack
+        console.log('Interview completed, building final pack...');
+        await buildFinalPack();
       } else if (data.nextQuestion) {
         // Move to next question
         setCurrentQuestionIndex(prev => prev + 1);
@@ -200,7 +200,39 @@ export default function BuilderPage() {
     }
   };
 
-  // Step 5: Handle viewing in chat
+  // Step 5: Build final pack after interview completion
+  const buildFinalPack = async () => {
+    if (!sessionId || !packId) {
+      setError('Missing session or pack ID');
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/api/pack', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ packId, sessionId })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to build final pack');
+      }
+
+      const data = await response.json();
+      setFinalPack(data.pack);
+      setCurrentStep('final');
+      
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred building the final pack');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Step 6: Handle viewing in chat
   const handleViewChat = () => {
     if (finalPack) {
       router.push(`/onboard?packId=${finalPack.id}`);

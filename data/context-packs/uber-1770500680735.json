@@ -1,0 +1,182 @@
+{
+  "id": "uber-1770500680735",
+  "companyName": "uber",
+  "companyUrl": "https://uber.com",
+  "version": "v1",
+  "createdAt": "2026-02-07T21:44:40.735Z",
+  "updatedAt": "2026-02-07T21:48:09.223Z",
+  "vision": {
+    "content": "Uber’s vision is to become the world’s leading platform for movement—of people, food, and goods—evolving long term into a global, multimodal mobility and logistics ecosystem that is reliable, accessible, and sustainable.",
+    "confidence": {
+      "value": 0.95
+    },
+    "citations": [
+      {
+        "type": "interview",
+        "reference": "vision"
+      }
+    ]
+  },
+  "mission": {
+    "content": "We reimagine the way the world moves for the better.",
+    "confidence": {
+      "value": 0.9
+    },
+    "citations": [
+      {
+        "type": "url",
+        "reference": "https://uber.com/about",
+        "text": "About usWe reimagine the way the world moves for the better"
+      }
+    ]
+  },
+  "values": [],
+  "icp": {
+    "segments": [
+      {
+        "name": "Primary Customer Segments",
+        "description": {
+          "content": "Uber primarily targets urban consumers needing fast, reliable transportation and delivery, drivers seeking flexible income, and businesses requiring scalable mobility and logistics, all valuing convenience, affordability, and real-time reliability.",
+          "confidence": {
+            "value": 0.95
+          },
+          "citations": [
+            {
+              "type": "interview",
+              "reference": "icp"
+            }
+          ]
+        },
+        "painPoints": []
+      }
+    ],
+    "evolution": {
+      "content": "Information not available",
+      "confidence": {
+        "value": 0,
+        "reason": "Not provided in public scan or interview"
+      },
+      "citations": []
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [
+      {
+        "content": "Making money on your schedule with deliveries or rides",
+        "confidence": {
+          "value": 0.8
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://uber.com",
+            "text": "Drive when you want, make what you need"
+          }
+        ]
+      }
+    ],
+    "pricingModel": {
+      "content": "For Uber, pricing is dynamic and transaction-based (including base fares, time/distance, surge pricing, and service fees), aligning with rider value through speed and availability, driver value through earnings opportunities, and business value by balancing marketplace supply and demand.",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "interview",
+          "reference": "business-model"
+        }
+      ]
+    },
+    "keyMetrics": [
+      {
+        "content": "For Uber, key business metrics include gross bookings, trips completed, active riders and drivers, take rate, marketplace balance (supply–demand), ETA reliability, and retention, as these reflect growth, efficiency, and unit economics.",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "interview",
+            "reference": "business-model"
+          }
+        ]
+      }
+    ]
+  },
+  "product": {
+    "jobsToBeDone": [
+      {
+        "content": "Helping riders find a way to go from point A to point B, order food quickly and affordably, removing barriers to healthcare, creating new freight-booking solutions, and helping companies provide a seamless employee travel experience.",
+        "confidence": {
+          "value": 0.8
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://uber.com/about",
+            "text": "Rides and beyondIn addition to helping riders find a way to go from point A to point B, we're helping people order food quickly and affordably, removing barriers to healthcare, creating new freight-booking solutions, and helping companies provide a seamless employee travel experience."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      {
+        "content": "Platform for managing global rides and meals, and local deliveries, for companies of any size.",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://uber.com",
+            "text": "The Uber you know, reimagined for businessUber for Business is a platform for managing global rides and meals, and local deliveries, for companies of any size."
+          }
+        ]
+      }
+    ]
+  },
+  "decisionRules": {
+    "priorities": [
+      {
+        "content": "For Uber, the top priorities are improving rider–driver matching and ETA accuracy (to increase reliability), enhancing driver earnings and retention features (to stabilize supply), and expanding multimodal and delivery offerings (to grow frequency and lifetime value).",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "interview",
+            "reference": "decision-rules"
+          }
+        ]
+      }
+    ],
+    "antiPatterns": [
+      {
+        "content": "For Uber, engineers should avoid over-optimizing locally at the expense of marketplace balance, shipping features that increase rider or driver friction, and building tightly coupled systems that reduce reliability and slow iteration at global scale.",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "interview",
+            "reference": "decision-rules"
+          }
+        ]
+      }
+    ]
+  },
+  "engineeringKPIs": [
+    {
+      "content": "For Uber, engineering success is measured through KPIs such as trip completion rate, ETA accuracy, app latency and uptime, marketplace balance (supply–demand matching), and incident recovery time, as these directly drive reliability, growth, and revenue.",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "interview",
+          "reference": "engineering-kpis"
+        }
+      ]
+    }
+  ],
+  "summary": "Uber envisions becoming the world’s leading platform for movement, evolving into a global, multimodal mobility and logistics ecosystem that is reliable, accessible, and sustainable. Its mission to reimagine the way the world moves for the better is supported by a dynamic, transaction-based pricing model that balances marketplace supply and demand, aligning with the value propositions for riders, drivers, and businesses. Uber's primary customer segments include urban consumers, drivers, and businesses, all valuing convenience, affordability, and real-time reliability. Engineering efforts are guided by priorities such as improving rider–driver matching, enhancing driver earnings, and expanding service offerings, with success measured by KPIs like trip completion rate and ETA accuracy. Engineers are encouraged to focus on features that enhance reliability and growth, while avoiding practices that compromise marketplace balance or system reliability. This comprehensive approach ensures that engineering work is closely aligned with Uber's strategic goals, driving growth and efficiency."
+}
