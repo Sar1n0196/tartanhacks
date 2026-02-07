@@ -1,0 +1,516 @@
+{
+  "id": "demo-acme-saas",
+  "companyName": "Acme SaaS",
+  "companyUrl": "https://acmesaas.example.com",
+  "version": "v0",
+  "createdAt": "2026-02-07T19:58:54.426Z",
+  "updatedAt": "2026-02-07T19:58:54.426Z",
+  "vision": {
+    "content": "To become the operating system for product development - the single source of truth that connects customer feedback, product strategy, and engineering execution.",
+    "confidence": {
+      "value": 0.95
+    },
+    "citations": [
+      {
+        "type": "url",
+        "reference": "https://acmesaas.example.com/about"
+      },
+      {
+        "type": "interview",
+        "reference": "vision"
+      }
+    ]
+  },
+  "mission": {
+    "content": "Help teams ship faster by eliminating context switching and keeping everyone aligned on what matters most to customers.",
+    "confidence": {
+      "value": 0.95
+    },
+    "citations": [
+      {
+        "type": "url",
+        "reference": "https://acmesaas.example.com"
+      },
+      {
+        "type": "interview",
+        "reference": "vision"
+      }
+    ]
+  },
+  "values": [
+    {
+      "content": "Customer obsession: We start with customer needs and work backwards",
+      "confidence": {
+        "value": 0.9
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com"
+        }
+      ]
+    },
+    {
+      "content": "Radical transparency: Everyone has access to the same information",
+      "confidence": {
+        "value": 0.9
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com"
+        }
+      ]
+    },
+    {
+      "content": "Bias for action: We ship fast and iterate based on feedback",
+      "confidence": {
+        "value": 0.9
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com"
+        }
+      ]
+    },
+    {
+      "content": "Technical excellence: We build products we are proud of",
+      "confidence": {
+        "value": 0.9
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com"
+        }
+      ]
+    }
+  ],
+  "icp": {
+    "segments": [
+      {
+        "name": "Early-stage B2B SaaS startups",
+        "description": {
+          "content": "Startups with 10-100 employees, product-led growth model, moving fast and need to ensure every engineer understands customer impact",
+          "confidence": {
+            "value": 0.95
+          },
+          "citations": [
+            {
+              "type": "url",
+              "reference": "https://acmesaas.example.com/about"
+            },
+            {
+              "type": "interview",
+              "reference": "icp"
+            }
+          ]
+        },
+        "painPoints": [
+          {
+            "content": "Engineers don't understand the \"why\" behind their work",
+            "confidence": {
+              "value": 0.95
+            },
+            "citations": [
+              {
+                "type": "url",
+                "reference": "https://acmesaas.example.com"
+              },
+              {
+                "type": "interview",
+                "reference": "icp"
+              }
+            ]
+          },
+          {
+            "content": "Context switching between tools slows down shipping velocity",
+            "confidence": {
+              "value": 0.9
+            },
+            "citations": [
+              {
+                "type": "url",
+                "reference": "https://acmesaas.example.com"
+              }
+            ]
+          },
+          {
+            "content": "Difficult to keep everyone aligned on priorities and customer needs",
+            "confidence": {
+              "value": 0.9
+            },
+            "citations": [
+              {
+                "type": "url",
+                "reference": "https://acmesaas.example.com"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "evolution": {
+      "content": "Started with product-led B2B SaaS companies, expanding to any fast-growing startup that values customer-centric engineering",
+      "confidence": {
+        "value": 0.9
+      },
+      "citations": [
+        {
+          "type": "interview",
+          "reference": "icp"
+        }
+      ]
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [
+      {
+        "content": "New customer acquisition through product-led growth",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      },
+      {
+        "content": "Expansion revenue as teams grow and upgrade tiers",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      },
+      {
+        "content": "Feature adoption driving upgrades to higher tiers",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      }
+    ],
+    "pricingModel": {
+      "content": "Subscription-based with three tiers: Starter ($49/month for up to 10 users), Growth ($199/month for up to 50 users), Enterprise (custom pricing)",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com/blog/our-approach"
+        }
+      ]
+    },
+    "keyMetrics": [
+      {
+        "content": "Customer retention rate: 95% monthly",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      },
+      {
+        "content": "Net revenue retention: 120%",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      },
+      {
+        "content": "Feature adoption within 30 days of launch",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      }
+    ]
+  },
+  "product": {
+    "jobsToBeDone": [
+      {
+        "content": "Help engineers understand how their work impacts customers and revenue",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com"
+          },
+          {
+            "type": "interview",
+            "reference": "business-model"
+          }
+        ]
+      },
+      {
+        "content": "Eliminate context switching by providing single source of truth",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com"
+          }
+        ]
+      },
+      {
+        "content": "Keep teams aligned on priorities and customer needs",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com"
+          }
+        ]
+      },
+      {
+        "content": "Connect every task to customer outcomes and business goals",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com"
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      {
+        "content": "Task management with customer outcome linking",
+        "confidence": {
+          "value": 0.85
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com"
+          }
+        ]
+      },
+      {
+        "content": "Customer feedback integration",
+        "confidence": {
+          "value": 0.85
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      },
+      {
+        "content": "Business impact tracking and metrics",
+        "confidence": {
+          "value": 0.85
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/blog/our-approach"
+          }
+        ]
+      }
+    ]
+  },
+  "decisionRules": {
+    "priorities": [
+      {
+        "content": "Build features that solve validated customer pain points",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          },
+          {
+            "type": "interview",
+            "reference": "decision-rules"
+          }
+        ]
+      },
+      {
+        "content": "Ship features that directly move revenue metrics",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          },
+          {
+            "type": "interview",
+            "reference": "decision-rules"
+          }
+        ]
+      },
+      {
+        "content": "Prioritize features with measurable business impact",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          },
+          {
+            "type": "interview",
+            "reference": "decision-rules"
+          }
+        ]
+      },
+      {
+        "content": "Choose simple solutions over complex ones",
+        "confidence": {
+          "value": 0.9
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          }
+        ]
+      }
+    ],
+    "antiPatterns": [
+      {
+        "content": "Do NOT build features without validated customer pain points",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          }
+        ]
+      },
+      {
+        "content": "Do NOT build complex solutions when simple ones will do",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          }
+        ]
+      },
+      {
+        "content": "Do NOT build anything that increases cognitive load for users",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          }
+        ]
+      },
+      {
+        "content": "Do NOT build features that cannot be measured for business impact",
+        "confidence": {
+          "value": 0.95
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://acmesaas.example.com/careers"
+          }
+        ]
+      }
+    ]
+  },
+  "engineeringKPIs": [
+    {
+      "content": "Feature adoption rate: % of customers using new features within 30 days",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com/careers"
+        }
+      ]
+    },
+    {
+      "content": "Time to customer value: days from feature start to customer impact",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com/careers"
+        }
+      ]
+    },
+    {
+      "content": "Customer satisfaction score for shipped features",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com/careers"
+        }
+      ]
+    },
+    {
+      "content": "Revenue impact per engineering sprint",
+      "confidence": {
+        "value": 0.95
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://acmesaas.example.com/careers"
+        }
+      ]
+    }
+  ],
+  "summary": "Acme SaaS is a project management platform for early-stage B2B SaaS startups (10-100 employees) who need to ship fast while keeping engineers aligned on customer needs and business impact.\n\nThe company's mission is to help teams ship faster by eliminating context switching and connecting every task to customer outcomes. Their vision is to become the operating system for product development.\n\nKey customer pain points: Engineers don't understand the \"why\" behind their work, context switching slows velocity, and it's hard to keep teams aligned on priorities.\n\nBusiness model: Subscription-based with three tiers ($49-$199/month, plus enterprise). Revenue drivers include new customer acquisition through product-led growth, expansion revenue, and feature adoption driving upgrades. Key metrics: 95% monthly retention, 120% net revenue retention.\n\nEngineering priorities: Build features that solve validated customer pain points, ship features that move revenue metrics, prioritize measurable business impact, and choose simple solutions. Anti-patterns: Don't build without validated pain points, don't over-engineer, don't increase user cognitive load, don't build unmeasurable features.\n\nEngineering KPIs: Feature adoption rate within 30 days, time to customer value, customer satisfaction scores, and revenue impact per sprint."
+}

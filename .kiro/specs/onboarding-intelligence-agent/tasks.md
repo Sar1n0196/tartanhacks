@@ -8,35 +8,35 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
 
 ## Tasks
 
-- [ ] 1. Project setup and core infrastructure
-  - [ ] 1.1 Initialize Next.js project with TypeScript and Tailwind CSS
+- [-] 1. Project setup and core infrastructure
+  - [x] 1.1 Initialize Next.js project with TypeScript and Tailwind CSS
     - Run `npx create-next-app@latest` with TypeScript and Tailwind options
     - Configure `tsconfig.json` for strict type checking
     - Set up project directory structure as per design
     - Create `.env.local` with `OPENAI_API_KEY` placeholder
     - _Requirements: 13.1_
   
-  - [ ] 1.2 Install dependencies and configure testing
+  - [x] 1.2 Install dependencies and configure testing
     - Install: `zod`, `cheerio`, `openai`, `fast-check`, `vitest`, `@testing-library/react`
     - Configure Vitest for unit and property-based testing
     - Create test setup files
     - _Requirements: 9.1, 9.2_
   
-  - [ ] 1.3 Define core TypeScript types and Zod schemas
+  - [x] 1.3 Define core TypeScript types and Zod schemas
     - Create `lib/types.ts` with all interfaces (Citation, ConfidenceScore, ContextField, ContextPack, etc.)
     - Create `lib/schemas.ts` with Zod schemas for validation
     - Export type inference from schemas
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8_
   
-  - [ ]* 1.4 Write property test for Context Pack schema round-trip
+  - [x] 1.4 Write property test for Context Pack schema round-trip
     - **Property 4: Context Pack Schema Validation Round-Trip**
     - **Validates: Requirements 2.9, 2.10, 14.6, 14.7**
     - Create arbitrary generator for valid Context Packs
     - Test: serialize → deserialize → validate produces equivalent object
     - Run 100 iterations
 
-- [ ] 2. Storage layer implementation
-  - [ ] 2.1 Implement JSON file storage
+- [x] 2. Storage layer implementation
+  - [x] 2.1 Implement JSON file storage
     - Create `lib/storage.ts` with Storage class
     - Implement `saveContextPack()` with file write and validation
     - Implement `getContextPack()` with file read and schema validation
@@ -44,20 +44,20 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Handle errors gracefully (file not found, parse errors, permissions)
     - _Requirements: 14.1, 14.2, 14.3, 14.4, 14.5_
   
-  - [ ]* 2.2 Write property test for storage persistence round-trip
+  - [x] 2.2 Write property test for storage persistence round-trip
     - **Property 26: Storage Persistence Round-Trip**
     - **Validates: Requirements 14.2, 14.3**
     - Test: save → retrieve produces equivalent Context Pack
     - Run 100 iterations
   
-  - [ ]* 2.3 Write unit tests for storage error handling
+  - [x] 2.3 Write unit tests for storage error handling
     - Test missing file returns null
     - Test invalid JSON returns null
     - Test schema validation failure
     - _Requirements: 14.4_
 
-- [ ] 3. LLM wrapper implementation
-  - [ ] 3.1 Implement OpenAI API wrapper
+- [x] 3. LLM wrapper implementation
+  - [x] 3.1 Implement OpenAI API wrapper
     - Create `lib/llm-wrapper.ts` with LLMWrapper class
     - Implement `complete()` method with OpenAI API calls
     - Implement `completeWithSchema()` with JSON parsing and Zod validation
@@ -79,25 +79,25 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Test token limit exceeded
     - _Requirements: 10.3, 10.4_
 
-- [ ] 4. Demo data implementation
-  - [ ] 4.1 Create demo data module
+- [x] 4. Demo data implementation
+  - [x] 4.1 Create demo data module
     - Create `lib/demo-data.ts` with DemoData class
     - Implement `getMockScrapeResult()` with pre-defined scraped pages for 2 example companies
     - Implement `getMockContextPack()` with complete Context Pack for 2 example companies
     - Implement `getDemoCompanies()` returning list of demo company names
     - _Requirements: 8.1, 8.2, 8.3_
   
-  - [ ]* 4.2 Write unit tests for demo data structure
+  - [x] 4.2 Write unit tests for demo data structure
     - Test mock scrape results have valid structure
     - Test mock context packs pass schema validation
     - Test at least 1 demo company exists
     - _Requirements: 8.3_
 
-- [ ] 5. Checkpoint - Core infrastructure complete
+- [x] 5. Checkpoint - Core infrastructure complete
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Web scraper implementation
-  - [ ] 6.1 Implement web scraper with Cheerio
+- [x] 6. Web scraper implementation
+  - [x] 6.1 Implement web scraper with Cheerio
     - Create `lib/scraper.ts` with Scraper class
     - Implement `scrapeCompany()` to discover and scrape pages (homepage, /about, /careers, /blog)
     - Implement `scrapePage()` with fetch, timeout handling, and error catching
@@ -131,7 +131,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 1.4, 10.1_
 
 - [ ] 7. Extractor implementation
-  - [ ] 7.1 Implement LLM-based extractor
+  - [x] 7.1 Implement LLM-based extractor
     - Create `lib/extractor.ts` with Extractor class
     - Implement `extractFromPages()` with system and user prompts
     - System prompt: rules against hallucination, require citations and confidence scores
@@ -157,7 +157,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 1.5, 1.6, 1.7_
 
 - [ ] 8. Gap finder implementation
-  - [ ] 8.1 Implement gap identification logic
+  - [x] 8.1 Implement gap identification logic
     - Create `lib/gap-finder.ts` with GapFinder class
     - Implement `analyzeGaps()` with system and user prompts
     - System prompt: prioritize gaps by importance for engineer decision-making
@@ -177,7 +177,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 3.1, 3.2_
 
 - [ ] 9. Interviewer implementation
-  - [ ] 9.1 Implement adaptive interview logic
+  - [x] 9.1 Implement adaptive interview logic
     - Create `lib/interviewer.ts` with Interviewer class
     - Implement `generateQuestions()` with system and user prompts
     - System prompt: generate 5-12 targeted questions, group by category, include stopping criteria
@@ -215,11 +215,11 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Test adaptive question selection
     - _Requirements: 3.3, 3.4, 3.5, 3.6_
 
-- [ ] 10. Checkpoint - Business logic components complete
+- [x] 10. Checkpoint - Business logic components complete
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 11. Pack builder implementation
-  - [ ] 11.1 Implement context pack merging logic
+  - [x] 11.1 Implement context pack merging logic
     - Create `lib/pack-builder.ts` with PackBuilder class
     - Implement `buildFinalPack()` with system and user prompts
     - System prompt: merge draft + interview, prioritize founder answers, update confidence scores
@@ -270,7 +270,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 5.6_
 
 - [ ] 12. Chat engine implementation
-  - [ ] 12.1 Implement engineer chat logic
+  - [x] 12.1 Implement engineer chat logic
     - Create `lib/chat-engine.ts` with ChatEngine class
     - Implement `answerQuestion()` with system and user prompts
     - System prompt: answer only from context pack, include citations, add "why this matters"
@@ -308,7 +308,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 6.2, 6.3, 6.4, 6.5, 6.6_
 
 - [ ] 13. Demo mode integration
-  - [ ] 13.1 Add demo mode toggle to components
+  - [x] 13.1 Add demo mode toggle to components
     - Update Scraper to check demo mode flag
     - Update Interviewer to check demo mode flag
     - If demo mode enabled, use DemoData instead of real operations
@@ -331,8 +331,8 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Test live mode performs real operations
     - _Requirements: 8.1, 8.6_
 
-- [ ] 14. Failure handling integration
-  - [ ] 14.1 Add complete scrape failure fallback
+- [~] 14. Failure handling integration
+  - [x] 14.1 Add complete scrape failure fallback
     - Update scan flow to check if all pages failed
     - If all failed, proceed to interview with empty draft pack
     - _Requirements: 10.1_
@@ -349,11 +349,11 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Test: multiple skipped questions still produce valid pack
     - Run 100 iterations
 
-- [ ] 15. Checkpoint - All business logic complete with tests
+- [x] 15. Checkpoint - All business logic complete with tests
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 16. API routes implementation
-  - [ ] 16.1 Implement /api/scan route
+  - [x] 16.1 Implement /api/scan route
     - Create `app/api/scan/route.ts`
     - Accept POST with company URL and demo mode flag
     - Call Scraper → Extractor → create draft pack v0
@@ -362,7 +362,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Handle errors gracefully
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7_
   
-  - [ ] 16.2 Implement /api/interview route
+  - [x] 16.2 Implement /api/interview route
     - Create `app/api/interview/route.ts`
     - Accept POST to start interview (packId)
     - Accept POST to submit answer (sessionId, questionId, answer, skipped)
@@ -370,7 +370,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Return next question or completion status
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6_
   
-  - [ ] 16.3 Implement /api/pack route
+  - [x] 16.3 Implement /api/pack route
     - Create `app/api/pack/route.ts`
     - Accept POST to build final pack (packId, interview answers)
     - Call PackBuilder → save final pack v1
@@ -378,7 +378,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Accept GET to retrieve pack by ID
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7_
   
-  - [ ] 16.4 Implement /api/chat route
+  - [x] 16.4 Implement /api/chat route
     - Create `app/api/chat/route.ts`
     - Accept POST with packId, message, conversation history
     - Call ChatEngine → generate response
@@ -392,41 +392,41 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 1.1-14.7_
 
 - [ ] 17. Shared UI components
-  - [ ] 17.1 Create shared components
+  - [x] 17.1 Create shared components
     - Create `components/shared/ConfidenceScore.tsx` to display confidence badges
     - Create `components/shared/DemoModeToggle.tsx` for demo mode switch
     - Style with Tailwind CSS
     - _Requirements: 7.6, 8.7_
   
-  - [ ] 17.2 Create citation components
+  - [x] 17.2 Create citation components
     - Create `components/onboard/CitationBadge.tsx` to display citations
     - Show URL or category based on citation type
     - Style with Tailwind CSS
     - _Requirements: 6.3, 7.4, 7.5_
 
 - [ ] 18. Founder flow UI (/builder)
-  - [ ] 18.1 Create URL input step
+  - [~] 18.1 Create URL input step
     - Create `components/builder/URLInput.tsx`
     - Form with company URL and optional name inputs
     - Demo mode toggle
     - Submit button to start scan
     - _Requirements: 11.1, 11.2_
   
-  - [ ] 18.2 Create scan progress step
+  - [~] 18.2 Create scan progress step
     - Create `components/builder/ScanProgress.tsx`
     - Show loading state during scraping
     - Display scraped page count
     - Show errors if any pages failed
     - _Requirements: 11.3_
   
-  - [ ] 18.3 Create draft pack view step
+  - [~] 18.3 Create draft pack view step
     - Create `components/builder/DraftPackView.tsx`
     - Display draft pack v0 sections with confidence scores
     - Show citations for each field
     - Button to proceed to interview
     - _Requirements: 11.4_
   
-  - [ ] 18.4 Create interview question step
+  - [~] 18.4 Create interview question step
     - Create `components/builder/InterviewQuestion.tsx`
     - Display current question with context
     - Text area for answer
@@ -435,7 +435,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Progress indicator (question X of Y)
     - _Requirements: 11.5_
   
-  - [ ] 18.5 Create final pack view step
+  - [~] 18.5 Create final pack view step
     - Create `components/builder/FinalPackView.tsx`
     - Display final pack v1 with all sections
     - Show confidence scores and citations
@@ -443,7 +443,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Button to view in engineer chat
     - _Requirements: 11.6_
   
-  - [ ] 18.6 Wire up /builder page
+  - [~] 18.6 Wire up /builder page
     - Create `app/builder/page.tsx`
     - Manage multi-step flow state
     - Call API routes for each step
@@ -452,7 +452,7 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 11.1, 11.2, 11.3, 11.4, 11.5, 11.6, 11.7, 11.8_
 
 - [ ] 19. Engineer flow UI (/onboard)
-  - [ ] 19.1 Create chat message component
+  - [~] 19.1 Create chat message component
     - Create `components/onboard/ChatMessage.tsx`
     - Display user and assistant messages differently
     - Show citations for assistant messages
@@ -460,14 +460,14 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Show confidence scores
     - _Requirements: 12.2, 12.3, 12.4, 12.5_
   
-  - [ ] 19.2 Create chat input component
+  - [~] 19.2 Create chat input component
     - Create `components/onboard/ChatInput.tsx`
     - Text input for questions
     - Submit button
     - Loading state during response generation
     - _Requirements: 12.6_
   
-  - [ ] 19.3 Wire up /onboard page
+  - [~] 19.3 Wire up /onboard page
     - Create `app/onboard/page.tsx`
     - Load context pack from storage (use query param for packId)
     - Display chat interface with message history
@@ -477,21 +477,21 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - _Requirements: 12.1, 12.2, 12.3, 12.4, 12.5, 12.6, 12.7_
 
 - [ ] 20. Landing page and navigation
-  - [ ] 20.1 Create landing page
+  - [~] 20.1 Create landing page
     - Create `app/page.tsx`
     - Explain the app purpose
     - Links to /builder (for founders) and /onboard (for engineers)
     - Demo mode explanation
     - Style with Tailwind CSS
   
-  - [ ] 20.2 Create layout with navigation
+  - [~] 20.2 Create layout with navigation
     - Update `app/layout.tsx`
     - Add navigation header with links
     - Add demo mode toggle in header
     - Style with Tailwind CSS
 
 - [ ] 21. Documentation and polish
-  - [ ] 21.1 Write comprehensive README
+  - [~] 21.1 Write comprehensive README
     - Setup instructions (install dependencies, set OPENAI_API_KEY)
     - How to run in development mode
     - How to use demo mode
@@ -500,20 +500,20 @@ The implementation uses Next.js 14+ with TypeScript, Tailwind CSS, OpenAI API, a
     - Limitations and future improvements
     - _Requirements: All_
   
-  - [ ] 21.2 Add error boundaries and loading states
+  - [~] 21.2 Add error boundaries and loading states
     - Add React error boundaries to catch UI errors
     - Add loading spinners for async operations
     - Add toast notifications for errors
     - _Requirements: 10.4, 10.7_
   
-  - [ ] 21.3 Polish UI styling
+  - [~] 21.3 Polish UI styling
     - Ensure consistent spacing and typography
     - Add hover states and transitions
     - Ensure responsive design for mobile
     - Test accessibility (keyboard navigation, screen readers)
     - _Requirements: 11.8, 12.7_
 
-- [ ] 22. Final checkpoint - Complete application
+- [~] 22. Final checkpoint - Complete application
   - Ensure all tests pass, ask the user if questions arise.
   - Test end-to-end flows manually
   - Verify demo mode works without API key
