@@ -4,7 +4,6 @@ import {
   ContextPack,
   InterviewAnswer,
   InterviewQuestion,
-  ContextField,
 } from './types';
 import {
   PackBuildRequestSchema,

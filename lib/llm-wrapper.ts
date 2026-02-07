@@ -398,11 +398,11 @@ export class LLMWrapper {
    * @returns Formatted error string
    */
   private formatZodError(error: z.ZodError): string {
-    if (!error.errors || error.errors.length === 0) {
+    if (!error.issues || error.issues.length === 0) {
       return 'Unknown validation error';
     }
     
-    return error.errors
+    return error.issues
       .map(err => `- ${err.path.join('.')}: ${err.message}`)
       .join('\n');
   }

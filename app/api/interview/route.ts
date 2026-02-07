@@ -6,7 +6,6 @@ import { createDefaultStorage } from '@/lib/storage';
 import {
   InterviewStartRequestSchema,
   InterviewAnswerRequestSchema,
-  InterviewSessionSchema,
 } from '@/lib/schemas';
 import type { InterviewSession, InterviewAnswer } from '@/lib/types';
 import { z } from 'zod';

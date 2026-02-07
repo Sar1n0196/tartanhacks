@@ -1,4 +1,3 @@
-import React from 'react';
 import { ConfidenceScore as ConfidenceScoreType } from '@/lib/types';
 
 interface ConfidenceScoreProps {

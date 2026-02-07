@@ -171,7 +171,7 @@ OUTPUT FORMAT: JSON matching this schema:
 
     // Return next question
     const nextQuestion = session.questions[session.currentQuestionIndex];
-    return nextQuestion;
+    return nextQuestion || null;
   }
 
   /**

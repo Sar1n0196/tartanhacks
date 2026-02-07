@@ -262,7 +262,10 @@ function extractCompanyNameFromUrl(url: string): string {
     const name = parts[0];
     
     // Capitalize first letter
-    return name.charAt(0).toUpperCase() + name.slice(1);
+    if (name) {
+      return name.charAt(0).toUpperCase() + name.slice(1);
+    }
+    return 'Unknown Company';
   } catch {
     return 'Unknown Company';
   }
