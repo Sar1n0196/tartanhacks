@@ -1,0 +1,58 @@
+{
+  "id": "agilow-1770498277595",
+  "companyName": "Agilow",
+  "companyUrl": "https://www.agilow.ai",
+  "version": "v0",
+  "createdAt": "2026-02-07T21:04:37.595Z",
+  "updatedAt": "2026-02-07T21:04:37.595Z",
+  "vision": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": "No pages were successfully scraped"
+    },
+    "citations": []
+  },
+  "mission": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": "No pages were successfully scraped"
+    },
+    "citations": []
+  },
+  "values": [],
+  "icp": {
+    "segments": [],
+    "evolution": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "Not extracted from public pages"
+      },
+      "citations": []
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [],
+    "pricingModel": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "No pages were successfully scraped"
+      },
+      "citations": []
+    },
+    "keyMetrics": []
+  },
+  "product": {
+    "jobsToBeDone": [],
+    "keyFeatures": []
+  },
+  "decisionRules": {
+    "priorities": [],
+    "antiPatterns": []
+  },
+  "engineeringKPIs": [],
+  "summary": "Agilow - Draft Context Pack v0\n\n\nNote: This is a draft pack (v0) based on public information. Complete the interview to create the final pack (v1) with founder insights."
+}

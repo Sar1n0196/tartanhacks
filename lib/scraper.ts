@@ -165,6 +165,8 @@ export class Scraper {
       // Extract readable content
       const { title, content } = this.extractReadableContent(html);
 
+      console.log(`Scraped ${url}: title="${title}", content length=${content.length}`);
+
       return {
         url,
         title,

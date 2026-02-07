@@ -46,8 +46,15 @@ export class Extractor {
     // Filter to only successful scrapes
     const successfulPages = pages.filter(p => p.success && p.content.length > 0);
 
+    console.log(`Extractor: Total pages: ${pages.length}, Successful pages: ${successfulPages.length}`);
+    if (successfulPages.length > 0) {
+      console.log(`First successful page content length: ${successfulPages[0].content.length}`);
+      console.log(`First successful page URL: ${successfulPages[0].url}`);
+    }
+
     // If no successful pages, return empty extraction with low confidence
     if (successfulPages.length === 0) {
+      console.log('Extractor: No successful pages, returning empty extraction');
       return this.createEmptyExtraction();
     }
 

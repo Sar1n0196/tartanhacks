@@ -1,0 +1,211 @@
+{
+  "id": "paypal-1770499505831",
+  "companyName": "paypal",
+  "companyUrl": "https://paypal.com",
+  "version": "v0",
+  "createdAt": "2026-02-07T21:25:05.831Z",
+  "updatedAt": "2026-02-07T21:25:05.831Z",
+  "vision": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": "The page does not explicitly state PayPal's vision statement."
+    },
+    "citations": []
+  },
+  "mission": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": "The page does not explicitly state PayPal's mission statement."
+    },
+    "citations": []
+  },
+  "values": [],
+  "icp": {
+    "segments": [
+      {
+        "name": "Shoppers",
+        "description": {
+          "content": "Individuals looking to shop in stores and online, seeking cash back offers and rewards.",
+          "confidence": {
+            "value": 0.7,
+            "reason": "The description is inferred from the context of services offered to individuals who shop using PayPal for cash back rewards and convenience."
+          },
+          "citations": [
+            {
+              "type": "url",
+              "reference": "https://paypal.com",
+              "text": "Shop in stores and online Tap to pay in stores with the PayPal Debit Card and earn rewards online with PayPal checkout."
+            }
+          ]
+        },
+        "painPoints": [
+          {
+            "content": "Wanting to earn rewards and cash back on purchases.",
+            "confidence": {
+              "value": 0.7,
+              "reason": "Inferred from the emphasis on cash back offers and rewards for shopping."
+            },
+            "citations": [
+              {
+                "type": "url",
+                "reference": "https://paypal.com",
+                "text": "Get cash back on the brands you love... Get hundreds of cash back offers."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Individuals Needing Flexible Payment Options",
+        "description": {
+          "content": "Customers looking for flexible payment solutions, such as paying in installments or over time without affecting their credit score.",
+          "confidence": {
+            "value": 0.7,
+            "reason": "Inferred from the detailed payment options provided, indicating a target segment that values financial flexibility."
+          },
+          "citations": [
+            {
+              "type": "url",
+              "reference": "https://paypal.com",
+              "text": "Pay now or pay over time. It’s your choice. Pay in 4 interest-free payments... No late fees. Won't affect your credit score to apply."
+            }
+          ]
+        },
+        "painPoints": [
+          {
+            "content": "Seeking ways to manage cash flow or finance purchases without incurring interest or fees.",
+            "confidence": {
+              "value": 0.7,
+              "reason": "Inferred from the features of the payment options that address concerns about fees and credit scores."
+            },
+            "citations": [
+              {
+                "type": "url",
+                "reference": "https://paypal.com",
+                "text": "Pay in 4 interest-free payments Paid every two weeks. No late fees. Won't affect your credit score to apply."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "evolution": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "Not extracted from public pages"
+      },
+      "citations": []
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [
+      {
+        "content": "Transaction fees from merchants",
+        "confidence": {
+          "value": 0.5,
+          "reason": "While not explicitly stated, the emphasis on various payment and checkout options suggests transaction fees as a revenue driver."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com"
+          }
+        ]
+      }
+    ],
+    "pricingModel": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "The page does not provide specific details on PayPal's pricing model."
+      },
+      "citations": []
+    },
+    "keyMetrics": []
+  },
+  "product": {
+    "jobsToBeDone": [
+      {
+        "content": "Enabling secure and convenient online and in-store payments",
+        "confidence": {
+          "value": 0.8,
+          "reason": "Directly stated through the description of using PayPal for shopping and payments."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Shop in stores and online Tap to pay in stores with the PayPal Debit Card and earn rewards online with PayPal checkout."
+          }
+        ]
+      },
+      {
+        "content": "Providing flexible payment options to manage finances",
+        "confidence": {
+          "value": 0.8,
+          "reason": "Directly stated through the various flexible payment solutions offered."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Pay now or pay over time. It’s your choice. Pay in 4 interest-free payments... Pay Monthly in 3,6, 12, or 24 payments With $0 down."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      {
+        "content": "PayPal Debit Card for tap to pay in stores and online checkout",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly mentioned as a feature for making payments and earning rewards."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Tap to pay in stores with the PayPal Debit Card and earn rewards online with PayPal checkout."
+          }
+        ]
+      },
+      {
+        "content": "Flexible payment solutions like Pay in 4 and Pay Monthly",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly detailed on the page, indicating key financial products."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Pay in 4 interest-free payments... Pay Monthly in 3,6, 12, or 24 payments With $0 down."
+          }
+        ]
+      },
+      {
+        "content": "Cashback Mastercard® offering cash back on purchases",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly mentioned as a product feature for earning cash back."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Pay with the PayPal Cashback Mastercard® Earn 3% cash back when you check out with PayPal and 1.5% on all other Mastercard purchases."
+          }
+        ]
+      }
+    ]
+  },
+  "decisionRules": {
+    "priorities": [],
+    "antiPatterns": []
+  },
+  "engineeringKPIs": [],
+  "summary": "paypal - Draft Context Pack v0\n\n\nTarget Customers:\n- Shoppers: Individuals looking to shop in stores and online, seeking cash back offers and rewards.\n- Individuals Needing Flexible Payment Options: Customers looking for flexible payment solutions, such as paying in installments or over time without affecting their credit score.\n\nJobs to be Done:\n- Enabling secure and convenient online and in-store payments\n- Providing flexible payment options to manage finances\n\nNote: This is a draft pack (v0) based on public information. Complete the interview to create the final pack (v1) with founder insights."
+}

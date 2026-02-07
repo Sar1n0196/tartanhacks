@@ -1,0 +1,152 @@
+{
+  "id": "stripe-1770498791826",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "version": "v0",
+  "createdAt": "2026-02-07T21:13:11.826Z",
+  "updatedAt": "2026-02-07T21:13:11.826Z",
+  "vision": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": ""
+    },
+    "citations": []
+  },
+  "mission": {
+    "content": "Stripe builds financial infrastructure that ambitious companies use to launch their boldest products.",
+    "confidence": {
+      "value": 0.9,
+      "reason": "The statement is explicitly stated as what Stripe aims to achieve for its customers."
+    },
+    "citations": [
+      {
+        "type": "url",
+        "reference": "https://stripe.com/careers",
+        "text": "Stripe builds financial infrastructure that ambitious companies use to launch their boldest products."
+      }
+    ]
+  },
+  "values": [],
+  "icp": {
+    "segments": [
+      {
+        "name": "Startups",
+        "description": {
+          "content": "Hours-old startups",
+          "confidence": {
+            "value": 0.7,
+            "reason": "The description is somewhat general but identifies a specific segment."
+          },
+          "citations": [
+            {
+              "type": "url",
+              "reference": "https://stripe.com/careers",
+              "text": "Our customers range from hours-old startups to complex global businesses."
+            }
+          ]
+        },
+        "painPoints": []
+      },
+      {
+        "name": "Complex Global Businesses",
+        "description": {
+          "content": "Complex global businesses",
+          "confidence": {
+            "value": 0.7,
+            "reason": "The description is somewhat general but identifies a specific segment."
+          },
+          "citations": [
+            {
+              "type": "url",
+              "reference": "https://stripe.com/careers",
+              "text": "Our customers range from hours-old startups to complex global businesses."
+            }
+          ]
+        },
+        "painPoints": []
+      }
+    ],
+    "evolution": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "Not extracted from public pages"
+      },
+      "citations": []
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [
+      {
+        "content": "Accepting payments, offering financial services, implementing custom revenue models",
+        "confidence": {
+          "value": 0.9,
+          "reason": "These activities are directly mentioned as part of what Stripe offers, implying they are key revenue drivers."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://stripe.com",
+            "text": "Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth."
+          }
+        ]
+      }
+    ],
+    "pricingModel": {
+      "content": "Pro Plan billed monthly, Tokens at $0.01 per 1,000 units",
+      "confidence": {
+        "value": 0.9,
+        "reason": "Specific pricing models are mentioned, providing clear evidence of part of Stripe's pricing structure."
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://stripe.com",
+          "text": "Pro PlanBilled monthlyTokens$0.01 per 1,000 units"
+        }
+      ]
+    },
+    "keyMetrics": []
+  },
+  "product": {
+    "jobsToBeDone": [
+      {
+        "content": "Accept and optimize payments globally—online and in person, enable any billing model, monetize through agentic commerce, create a card issuing program, access borderless money movement with stablecoins and crypto, embed payments in your platform",
+        "confidence": {
+          "value": 0.9,
+          "reason": "These are explicitly stated as functionalities provided by Stripe, indicating the jobs customers hire Stripe to do."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://stripe.com",
+            "text": "Accept and optimize payments globally—online and in personEnable any billing modelMonetize through agentic commerceCreate a card issuing programAccess borderless money movement with stablecoins and cryptoEmbed payments in your platform"
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      {
+        "content": "Support for 135+ currencies and payment methods, $1.4T in payments volume processed in 2024, 99.999% historical uptime for Stripe services, 200M+ active subscriptions managed on Stripe Billing",
+        "confidence": {
+          "value": 0.9,
+          "reason": "These features are directly mentioned, highlighting Stripe's capabilities and performance metrics."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://stripe.com",
+            "text": "135+currencies and payment methods supported$1.4Tin payments volume processed in 202499.999%historical uptime for Stripe services200M+active subscriptions managed on Stripe Billing"
+          }
+        ]
+      }
+    ]
+  },
+  "decisionRules": {
+    "priorities": [],
+    "antiPatterns": []
+  },
+  "engineeringKPIs": [],
+  "summary": "Stripe - Draft Context Pack v0\n\nMission: Stripe builds financial infrastructure that ambitious companies use to launch their boldest products.\n\nTarget Customers:\n- Startups: Hours-old startups\n- Complex Global Businesses: Complex global businesses\n\nJobs to be Done:\n- Accept and optimize payments globally—online and in person, enable any billing model, monetize through agentic commerce, create a card issuing program, access borderless money movement with stablecoins and crypto, embed payments in your platform\n\nNote: This is a draft pack (v0) based on public information. Complete the interview to create the final pack (v1) with founder insights."
+}

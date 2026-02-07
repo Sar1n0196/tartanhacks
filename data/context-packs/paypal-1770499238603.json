@@ -1,0 +1,208 @@
+{
+  "id": "paypal-1770499238603",
+  "companyName": "paypal",
+  "companyUrl": "https://paypal.com",
+  "version": "v0",
+  "createdAt": "2026-02-07T21:20:38.603Z",
+  "updatedAt": "2026-02-07T21:20:38.603Z",
+  "vision": {
+    "content": "",
+    "confidence": {
+      "value": 0,
+      "reason": "No explicit vision statement is provided in the provided pages."
+    },
+    "citations": []
+  },
+  "mission": {
+    "content": "revolutionize commerce globally",
+    "confidence": {
+      "value": 0.9,
+      "reason": "The mission is explicitly stated as the purpose of the company."
+    },
+    "citations": [
+      {
+        "type": "url",
+        "reference": "https://paypal.com/jobs",
+        "text": "We believe now is the time to revolutionize commerce globally."
+      }
+    ]
+  },
+  "values": [
+    {
+      "content": "inclusion",
+      "confidence": {
+        "value": 0.9,
+        "reason": "Listed explicitly as a value."
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://paypal.com/jobs",
+          "text": "valuing inclusion, innovation, collaboration, and wellness"
+        }
+      ]
+    },
+    {
+      "content": "innovation",
+      "confidence": {
+        "value": 0.9,
+        "reason": "Listed explicitly as a value."
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://paypal.com/jobs",
+          "text": "valuing inclusion, innovation, collaboration, and wellness"
+        }
+      ]
+    },
+    {
+      "content": "collaboration",
+      "confidence": {
+        "value": 0.9,
+        "reason": "Listed explicitly as a value."
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://paypal.com/jobs",
+          "text": "valuing inclusion, innovation, collaboration, and wellness"
+        }
+      ]
+    },
+    {
+      "content": "wellness",
+      "confidence": {
+        "value": 0.9,
+        "reason": "Listed explicitly as a value."
+      },
+      "citations": [
+        {
+          "type": "url",
+          "reference": "https://paypal.com/jobs",
+          "text": "valuing inclusion, innovation, collaboration, and wellness"
+        }
+      ]
+    }
+  ],
+  "icp": {
+    "segments": [],
+    "evolution": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "Not extracted from public pages"
+      },
+      "citations": []
+    }
+  },
+  "businessModel": {
+    "revenueDrivers": [
+      {
+        "content": "Cash back rewards",
+        "confidence": {
+          "value": 0.6,
+          "reason": "Implied as a revenue driver through the promotion of use of PayPal's services."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Earn 3% cash back when you check out with PayPal and 1.5% on all other Mastercard purchases."
+          }
+        ]
+      },
+      {
+        "content": "Interest-free payments",
+        "confidence": {
+          "value": 0.6,
+          "reason": "Implied as a revenue driver through the offering of financial services."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Pay in 4 interest-free payments"
+          }
+        ]
+      }
+    ],
+    "pricingModel": {
+      "content": "",
+      "confidence": {
+        "value": 0,
+        "reason": "No explicit pricing model details are provided in the provided pages."
+      },
+      "citations": []
+    },
+    "keyMetrics": []
+  },
+  "product": {
+    "jobsToBeDone": [
+      {
+        "content": "Send and receive money securely",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly stated as a function of the product."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Securely send money to just about anyone, anywhere"
+          }
+        ]
+      },
+      {
+        "content": "Pay for purchases over time",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly stated as a function of the product."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Pay now or pay over time."
+          }
+        ]
+      }
+    ],
+    "keyFeatures": [
+      {
+        "content": "PayPal Debit Card",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly mentioned as a feature."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Tap to pay in stores with the PayPal Debit Card"
+          }
+        ]
+      },
+      {
+        "content": "Cashback Mastercard",
+        "confidence": {
+          "value": 0.9,
+          "reason": "Explicitly mentioned as a feature."
+        },
+        "citations": [
+          {
+            "type": "url",
+            "reference": "https://paypal.com",
+            "text": "Pay with the PayPal Cashback Mastercard"
+          }
+        ]
+      }
+    ]
+  },
+  "decisionRules": {
+    "priorities": [],
+    "antiPatterns": []
+  },
+  "engineeringKPIs": [],
+  "summary": "paypal - Draft Context Pack v0\n\nMission: revolutionize commerce globally\n\nJobs to be Done:\n- Send and receive money securely\n- Pay for purchases over time\n\nNote: This is a draft pack (v0) based on public information. Complete the interview to create the final pack (v1) with founder insights."
+}

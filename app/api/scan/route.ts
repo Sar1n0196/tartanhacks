@@ -124,6 +124,21 @@ async function handleLiveMode(companyUrl: string, companyName?: string) {
     console.log(`Extracting information from ${scrapeResult.pages.length} pages`);
     const extractionResult = await extractor.extractFromPages(scrapeResult.pages);
     
+    // Check if extraction returned empty results (e.g., SPA with no server-rendered content)
+    const hasAnyContent = extractionResult.vision.content || 
+                          extractionResult.mission.content || 
+                          extractionResult.values.length > 0 ||
+                          extractionResult.icp.segments.length > 0;
+    
+    if (!hasAnyContent && scrapeResult.pages.length > 0) {
+      console.warn('No content extracted from pages. This may be a JavaScript-heavy SPA.');
+      // Add a helpful error message
+      scrapeResult.errors.push(
+        'Unable to extract content from the website. This may be because the site uses JavaScript to render content. ' +
+        'Try using Demo Mode to see how the system works, or provide a different website URL.'
+      );
+    }
+    
     // Step 3: Create draft pack v0
     const draftPack = createDraftPack(
       companyUrl,

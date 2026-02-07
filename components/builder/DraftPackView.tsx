@@ -8,6 +8,7 @@ import CitationBadge from '@/components/onboard/CitationBadge';
 interface DraftPackViewProps {
   draftPack: ContextPack;
   onProceed: () => void;
+  isLoading?: boolean;
 }
 
 /**
@@ -18,7 +19,7 @@ interface DraftPackViewProps {
  * Displays the draft context pack v0 with confidence scores and citations,
  * allowing founders to review extracted information before the interview
  */
-export default function DraftPackView({ draftPack, onProceed }: DraftPackViewProps) {
+export default function DraftPackView({ draftPack, onProceed, isLoading = false }: DraftPackViewProps) {
   const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set(['vision']));
 
   const toggleSection = (section: string) => {
@@ -287,9 +288,16 @@ export default function DraftPackView({ draftPack, onProceed }: DraftPackViewPro
           </div>
           <button
             onClick={onProceed}
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+            disabled={isLoading}
+            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-colors flex items-center gap-2"
           >
-            Proceed to Interview
+            {isLoading && (
+              <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+              </svg>
+            )}
+            {isLoading ? 'Starting Interview...' : 'Proceed to Interview'}
           </button>
         </div>
       </div>

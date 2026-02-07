@@ -117,6 +117,7 @@ export default function BuilderPage() {
       return;
     }
     
+    console.log('Starting interview for pack:', packId);
     setError(null);
     setIsSubmitting(true);
     
@@ -127,12 +128,16 @@ export default function BuilderPage() {
         body: JSON.stringify({ packId })
       });
 
+      console.log('Interview API response status:', response.status);
+
       if (!response.ok) {
         const errorData = await response.json();
+        console.error('Interview API error:', errorData);
         throw new Error(errorData.error || 'Failed to start interview');
       }
 
       const data: InterviewStartResponse = await response.json();
+      console.log('Interview started:', data);
       
       setSessionId(data.sessionId);
       setQuestions(data.questions);
@@ -140,6 +145,7 @@ export default function BuilderPage() {
       setCurrentStep('interview');
       
     } catch (err) {
+      console.error('Error starting interview:', err);
       setError(err instanceof Error ? err.message : 'An error occurred starting the interview');
     } finally {
       setIsSubmitting(false);
@@ -262,6 +268,7 @@ export default function BuilderPage() {
         <DraftPackView
           draftPack={draftPack}
           onProceed={handleProceedToInterview}
+          isLoading={isSubmitting}
         />
       )}
 
